@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <i>
+        <h1>Area of the triangle</h1>
+        <h5>3. Write a JavaScript program to find the area of a triangle where lengths of the
+            three of its sides are 5, 6, 7</h5>
+        <!-- <p>A = Square root((s*(s-a)*(s-b)*(s-c))) and s = (a+b+c)/2 </p> -->
+        <p id = "A"></p>
+    </i>
+    <script>
+        let lengtha = 5;
+        let lengthb = 6;
+        let lengthc = 7;
+        let sum = ((lengtha + lengthb + lengthc)/2);
+        let area = Math.sqrt((sum*(sum-lengtha)*(sum-lengthb)*(sum-lengthc)))
+        document.getElementById("A").innerHTML = `Result: ${Math.round(area)}`
+    </script>
+
+</body>
+
+</html>
